@@ -28,13 +28,13 @@
 				</div>
 			</div>
 			<div class="hidden md:flex gap-2">
-				<NuxtLink :to="{name: 'dashboard'}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+				<NuxtLink v-if="loggedIn" :to="{name: 'dashboard'}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
 					Dashboard
 				</NuxtLink>
-				<NuxtLink to="/login" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+				<NuxtLink v-if="!loggedIn" to="/login" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
 					Log in
 				</NuxtLink>
-				<NuxtLink to="/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+				<NuxtLink v-if="!loggedIn" to="/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
 					Register
 				</NuxtLink>
 			</div>
@@ -75,11 +75,14 @@
 
 					<NuxtLink to="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</NuxtLink>
 				</div>
-				<NuxtLink to="/" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+				<NuxtLink v-if="!loggedIn" to="/" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
 					Log in
 				</NuxtLink>
-				<NuxtLink to="/register" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+				<NuxtLink v-if="!loggedIn" to="/register" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
 					Register
+				</NuxtLink>
+				<NuxtLink v-if="loggedIn" to="/dashboard" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+					Dashboard
 				</NuxtLink>
 			</div>
 		</div>
@@ -87,7 +90,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+	computed: {
+		loggedIn() {
+			return this.$store.state.auth.loggedIn
+		},
+	},
+}
 </script>
 
 <style></style>

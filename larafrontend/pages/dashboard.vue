@@ -6,7 +6,7 @@
 					<div class="w-80 bg-white rounded-md p-4 space-y-2">
 						<nuxt-link to="/dashboard" class="block bg-gray-50 p-2 text-blue-600 font-medium">Dashboard</nuxt-link>
 						<nuxt-link :to="{name: 'dashboard-profile'}" class="block bg-gray-50 p-2 text-blue-600 font-medium">Profile</nuxt-link>
-						<nuxt-link :to="{name: 'dashboard-profile'}" class="block bg-gray-50 p-2 text-blue-600 font-medium">Log Out</nuxt-link>
+						<a @click.prevent="logout" class="block bg-gray-50 p-2 text-blue-600 font-medium cursor-pointer">Log Out</a>
 					</div>
 
 					<div class="flex-1 bg-white rounded-md p-4">
@@ -21,6 +21,12 @@
 <script>
 export default {
 	layout: "empty",
+	middleware: "auth",
+	methods: {
+		async logout() {
+			await this.$auth.logout()
+		},
+	},
 }
 </script>
 

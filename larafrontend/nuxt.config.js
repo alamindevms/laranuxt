@@ -47,14 +47,14 @@ export default {
     strategies: {
       local: {
         token: {
-          property: 'token',
+          property: 'access_token',
           global: true,
           // required: true,
           // type: 'Bearer'
         },
         user: {
-          property: 'user',
-          // autoFetch: true
+          property: false,
+          autoFetch: true
         },
         endpoints: {
           login: { url: '/auth/login', method: 'post' },
@@ -62,12 +62,18 @@ export default {
           user: { url: '/auth/me', method: 'post' }
         }
       }
+    },
+    redirect: {
+      login: '/login',
+      logout: '/',
+      callback: '/login',
+      home: '/'
     }
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: 'http://larabackend.test/api'
+    baseURL: 'http://larabackend.test/api'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
