@@ -52,20 +52,20 @@
 			</div>
 
 			<div class="mt-6">
-				<form action="#" method="POST" class="space-y-6">
+				<form @submit.prevent="registerUser" class="space-y-6">
 					<div>
 						<label for="name" class="sr-only">Full name</label>
-						<input v-model="register.name" type="text" name="name" id="name" autocomplete="name" placeholder="Full name" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
+						<input v-model="registerForm.name" type="text" name="name" id="name" autocomplete="name" placeholder="Full name" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
 					</div>
 
 					<div>
 						<label for="mobile-or-email" class="sr-only">Mobile number or email</label>
-						<input v-model="register.email" type="text" name="mobile-or-email" id="mobile-or-email" autocomplete="email" placeholder="Mobile number or email" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
+						<input v-model="registerForm.email" type="email" name="mobile-or-email" id="mobile-or-email" autocomplete="email" placeholder="Mobile number or email" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
 					</div>
 
 					<div>
 						<label for="password" class="sr-only">Password</label>
-						<input v-model="register.password" id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
+						<input v-model="registerForm.password" id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required class="block h-10 w-full px-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md border" />
 					</div>
 
 					<div>
@@ -84,15 +84,30 @@
 
 <script>
 export default {
-	auth: "guest",
 	data() {
 		return {
-			register: {
+			registerForm: {
 				name: "",
 				email: "",
 				password: "",
 			},
 		}
+	},
+	methods: {
+		async registerUser() {
+			console.log(this.registerForm)
+			this.$axios
+				.$post("/auth/register", {data: this.registerForm})
+				.then((res) => console.log(res))
+				.catch((err) => console.log(err))
+			// try {
+			// 	let data = await this.$axios.$post("/auth/register", {data: this.registerForm})
+			// 	console.log(data)
+			// 	await this.$auth.setUserToken(data.access_token)
+			// } catch (err) {
+			// 	console.log(err, "from error")
+			// }
+		},
 	},
 }
 </script>
