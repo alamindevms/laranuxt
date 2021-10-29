@@ -6,6 +6,7 @@
 					<div class="w-80 bg-white rounded-md p-4 space-y-2">
 						<nuxt-link to="/dashboard" class="block bg-gray-50 p-2 text-blue-600 font-medium">Dashboard</nuxt-link>
 						<nuxt-link :to="{name: 'dashboard-profile'}" class="block bg-gray-50 p-2 text-blue-600 font-medium">Profile</nuxt-link>
+						<nuxt-link :to="{name: 'dashboard-customEvent'}" class="block bg-gray-50 p-2 text-blue-600 font-medium">Custom Event</nuxt-link>
 						<a @click.prevent="logout" class="block bg-gray-50 p-2 text-blue-600 font-medium cursor-pointer">Log Out</a>
 					</div>
 

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/larabackend/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/larabackend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/larabackend/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/larabackend/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/tymon/jwt-auth" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/namshi/jose" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/breeze" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/larabackend/vendor/nikic/php-parser" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
