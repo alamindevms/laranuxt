@@ -38,8 +38,22 @@
         <p class="text-base font-medium text-gray-800">Local variable watcher</p>
         <p class="text-sx font-light text-gray-600">You might have noticed that, in the previous examples, the name of the prop is always value and the name of the event is always input. These are defaults to implement a v-model in your custom component. But you can change it if you want. You can name the prop and the event according to your own needs.
           For that to be possible you may set the model attribute and tell the component which names you expect to represent the prop and the event that will update it.</p>
-        <p class="text-sx font-light text-red-600">The limitation is that when the value is changed from dev-tools it's not changed input field value but changed value. </p>
+        <p class="text-sx font-light text-red-600 italic">The limitation is that when the value is changed from dev-tools it's not changed input field value but changed value. </p>
 
+      </div>
+    </div>
+
+    <div class="px-5 py-10 bg-cyan-100 rounded-md">
+      <h1>5. Custom method: {{ text4 }} </h1>
+      <custommethod v-model="text4"/>
+
+      <div class="bg-gray-50 rounded-md p-2 mt-4">
+        <p class="text-base font-medium text-gray-800">Custom method</p>
+        <p class="text-sx font-light text-gray-600">You might have already read that, to prevent performance issues, you should avoid using watchers in your application.
+          In this second example, we take advantage of the @input event triggered by the native input element* and, using a custom method inside our component, we pass the value of the input to the parent component emitting an input event so that the value prop is updated from the outside**.
+        <p class="text-sx font-light text-gray-600">It is also important to mention that in this case we do not use the v-model in the native input, but the value attribute.</p>
+        <p class="text-sx font-light text-gray-600 italic">* VueJS already attaches event listeners to form inputs for us automatically and when these inputs are destroyed, all listeners are destroyed as well</p>
+        <p class="text-sx font-medium text-gray-800">⚠ VueJS 3: if you are using the latest version of VueJS, change the name of the prop from <span class="bg-green-100 px-2 py-1">value to modelValue</span> and the name of the event from <span class="bg-green-100 px-2 py-1"> input to update:modelValue </span> as per VueJS 3 docs</p>
       </div>
     </div>
 
@@ -55,7 +69,8 @@ export default {
       value: '',
       text: '',
       text2: '',
-      text3: ''
+      text3: '',
+      text4: '',
     }
   },
 }
