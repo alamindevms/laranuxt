@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="container mx-auto px-4 lg:px-0">
-			<div class="my-10 p-6 rounded-md bg-gray-100 h-screen">
+			<div class="my-10 p-6 rounded-md bg-gray-100 min-h-screen">
 				<div class="flex gap-8">
 					<div class="w-80 bg-white rounded-md p-4 space-y-2">
 						<nuxt-link to="/dashboard" class="block bg-gray-50 p-2 text-blue-600 font-medium">Dashboard</nuxt-link>
