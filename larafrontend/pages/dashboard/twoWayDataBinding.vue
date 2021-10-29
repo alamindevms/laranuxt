@@ -57,6 +57,17 @@
       </div>
     </div>
 
+    <div class="px-5 py-10 bg-cyan-100 rounded-md">
+      <h1>6. "Powerful" computed property: {{ text5 }} </h1>
+      <computedmethod v-model="text5"/>
+
+      <div class="bg-gray-50 rounded-md p-2 mt-4">
+        <p class="text-base font-medium text-gray-800">"Powerful" computed property</p>
+        <p class="text-sx font-light text-gray-600">Another way of implementing v-model in your custom component is using computed properties getters and setters.</p>
+        <p class="text-sx font-light text-gray-600 italic">You can define a local computed property, implement a getter that returns the value property, and a setter that emits an input event for the parent component to update the value prop from the outside**.</p>
+      </div>
+    </div>
+
     <p class="text-sx font-light">Docs: <a href="https://dev.to/vcpablo/vuejs-2-different-ways-to-implement-v-model-1mjf" class="text-blue-600 my-2">https://dev.to/vcpablo/vuejs-2-different-ways-to-implement-v-model-1mjf</a></p>
   </div>
 </template>
@@ -71,6 +82,7 @@ export default {
       text2: '',
       text3: '',
       text4: '',
+      text5: '',
     }
   },
 }
